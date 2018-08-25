@@ -4,19 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> merge
 var indexRouter = require('./routes/index');
 
 var app = express();
-<<<<<<< HEAD
-=======
-var indexRouter = require('./routes/index');var app = express();
->>>>>>> deleted user js file
-=======
->>>>>>> merge
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
