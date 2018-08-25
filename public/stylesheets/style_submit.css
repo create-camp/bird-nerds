@@ -92,16 +92,3 @@ a {
   padding-bottom: 29px;
   white-space: nowrap;
 }
-
-.birdCircles{
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  margin:50px;
-  border-radius: 50%;
-  /* position:relative; */
-}
-
-.circlesContainer{
-  float: left;
-}
