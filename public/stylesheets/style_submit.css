@@ -1,0 +1,107 @@
+/*Created this CSS cause I didnt want to mess with anyone's stuff yet*/
+
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+} */
+
+.main_container{
+  width: 320px;
+  height: 438px;
+  background-color: #e2e2e2;
+}
+
+.myNavBarNow{
+  width: 320px;
+  height: 50px;
+  background-color: #577d2b !important;
+  background-color: var(-- darkgreen) !important;
+  position:relative;
+}
+
+.imageRow::after{
+  content:"";
+  clear: both;
+  display: table;
+}
+
+.birdImage{
+  float: left;
+  padding-left: 28px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 19px;
+}
+
+.geomap{
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-right: 27px;
+  padding-bottom: 19px;
+}
+
+.Which-bird-did-you-f {
+  width: 139px;
+  height: 16px;
+  font-family: Avenir;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #464646;
+  padding-left: 28px;
+  padding-right: 153px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+.backgroundBirdBox {
+  width: 265px;
+  height: 260px;
+  background-color: #808080;
+  margin-left: 28px;
+  margin-right: 27px;
+  margin-bottom: 18px;
+}
+
+.footer_container{
+  width: 320px;
+  height: 80px;
+  background-color: #989898;
+}
+
+.Please-select-which {
+  width: 276px;
+  height: 19px;
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7e7e7e;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 32px;
+  padding-bottom: 29px;
+  white-space: nowrap;
+}
+
+.birdCircles{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin:50px;
+  border-radius: 50%;
+  /* position:relative; */
+}
+
+.circlesContainer{
+  float: left;
+}
