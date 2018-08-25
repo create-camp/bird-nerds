@@ -1,6 +1,28 @@
 .main{
-    margin-top: 50px;
+    margin-top: 20px;
+    padding-bottom: 100px;
 }
 .bird-sect{
     margin: 10px;
+}
+.img-circle{
+    width:80px;
+    height:80px;
+    border-radius: 40px
+}
+
+.my-footer{
+    background-color: darkolivegreen;
+    height: 80px;
+    font-size: 45px;
+    color: white;
+}
+
+.navbar{
+    color: white;
+}
+
+.navbar a{
+    
+    color: white;
 }

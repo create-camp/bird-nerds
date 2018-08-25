@@ -21,6 +21,14 @@ a {
   background-color: var(-- darkgreen) !important;
   position:relative;
 }
+.navbar{
+    color: white;
+}
+
+.navbar a{
+    
+    color: white;
+}
 
 .imageRow::after{
   content:"";
