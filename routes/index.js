@@ -15,11 +15,9 @@ router.get('/', async function (req, res, next) {
       birdArray = await csvToJson().fromFile(path.resolve(__dirname,`../public/data/bird_dataset.csv`));
     }
     //console.log(birdArray);
-    console.log("+++++++++++++++++++++++++++++++++++++++++++");
-    console.log(JSON.parse(userJson)[1].name);
-    console.log("+++++++++++++++++++++++++++++++++++++++++++");
+    console.log(JSON.parse(userJson)[1].birds);
     res.render('index', {
-      birdData: userJson,
+      birdData: birdArray,
       sightings: sightings
     });
 });

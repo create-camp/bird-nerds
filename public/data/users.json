@@ -1,8 +1,12 @@
 [
   {
-    "name" : "Peter"
+    "name" : "Peter",
+    "birds" : ["Tui", "Kea"],
+    "points" : 434
   },
   {
-    "name" : "Kate"
+    "name" : "Kate",
+    "birds" : ["Tui", "Kea"],
+    "points" : 434
   }
 ]
