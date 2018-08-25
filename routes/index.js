@@ -19,10 +19,11 @@ router.get('/', function(req, res, next) {
         console.log(err);
         reject();
       }
-      await helpers.asyncForEach(files, async file => {
+      await helpers.asyncForEach(files.filter(el => /\.csv$/.test(el)), async file => {
         console.log(file)
         console.log(files)
       json = await csvToJson().fromFile(path.resolve(__dirname,`../public/data/${file}`))
+      console.log("Loaded json file: ",json)
       });
       resolve();
     })
