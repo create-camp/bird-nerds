@@ -9,31 +9,12 @@ const path = require('path');
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-  var json = {};
 
-  let promises = new Promise(function(resolve, reject) {
-    fs.readdir("./public/data/", async (err, files) => {
-      console.log(files);
-      if( err ) {
-        console.log("here");
-        console.log(err);
-        reject();
-      }
-      await helpers.asyncForEach(files, async file => {
-        console.log(file)
-        console.log(files)
-      json = await csvToJson().fromFile(path.resolve(__dirname,`../public/data/${file}`))
-      });
-      resolve();
-    })
+csvToJson().fromFile(path.resolve(__dirname,`../public/data/bird_dataset.csv`)).then((jsonObj)=>{
+  res.render('index', {
+    birdData: jsonObj
   });
-
-
-  promises.then(() => {
-    res.render('index', {
-      birdData: JSON.stringify(json)
-    });
-  });
+});
 
 });
 

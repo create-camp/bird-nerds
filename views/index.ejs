@@ -19,6 +19,16 @@
                 </div>
             </div>
         </div>
+        <div><%=birdData.length%></div>
+
+          <% for(var i=0; i < birdData.length; i++) { %>
+            <div>
+              <h1><%=birdData[i].bird_name%></h1>
+              <p><%=birdData[i].description%></p>
+            </div>
+          <% } %>
+
+
         <div class="container main">
             <div class="col-6 float-left" style="background-color: aqua">
                 <img src="">
