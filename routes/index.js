@@ -10,6 +10,7 @@ const sightings = fs.readFileSync(path.resolve(__dirname,`../public/data/sightin
 const userJson = fs.readFileSync(path.resolve(__dirname,`../public/data/users.json`), 'utf8');
 var birdArray = [];
 /* GET home page. */
+
 router.get('/', async function (req, res, next) {
     if(birdArray.length == 0){
       birdArray = await csvToJson().fromFile(path.resolve(__dirname,`../public/data/bird_dataset.csv`));
@@ -20,6 +21,7 @@ router.get('/', async function (req, res, next) {
       birdData: birdArray,
       sightings: sightings
     });
+  
 });
 
 module.exports = router;
