@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var birdInfo = require('./routes/bird-info-page');
+var submitRouter = require('./routes/submit');
 
 var app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/bird/:bird_name', birdInfo);
+app.use('/submit', submitRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
