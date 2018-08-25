@@ -23,13 +23,14 @@
            <div class="card"><img src="<%=birdData[0].pic_url%>"></div>
            <% for(var i=0; i < birdData.length; i++) { %>
            <div class="card" style="width: 150px;height: 100px;">
-                <p><%=birdData[0].bird_name%></p>
-                <p><%=birdData[0].maori_name%></p>
-                <p><%=birdData[0].rarity%></p>
+                <p>Name: <%=birdData[0].bird_name%></p>
+                <p>Te Reo: <%=birdData[0].maori_name%></p>
+                <p>Rarity: <%=birdData[0].rarity%></p>
            </div>
            <% } %>
            <div class="description">
                <p>description</p>
+               <p><%=birdData[0].description%></p>
            </div>
 
        </div>
