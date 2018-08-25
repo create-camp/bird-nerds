@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 
 csvToJson().fromFile(path.resolve(__dirname,`../public/data/bird_dataset.csv`)).then((jsonObj)=>{
-  res.render('index', {
+  res.render('index.ejs', {
     birdData: jsonObj
   });
 });
