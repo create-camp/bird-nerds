@@ -1,7 +1,9 @@
-{
+[
+  {
   "user" : "Peter",
   "bird": "Tui",
   "date": "26/08/2018",
   "time": "9:53",
   "location": "flux"
-}
+  }
+]

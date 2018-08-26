@@ -105,8 +105,27 @@ a {
 }
 .birddatacontainer {
   margin-top: 15px;
+  background-image: 
   
 }
 .birdInfo {
   font-family: Avenir, sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.description {
+ margin-top: 20px;
+}
+p {
+  margin-bottom: 0;
+}
+.one {
+  width: 100%;
+}
+.two {
+  width: 100%;
+}
+.three {
+  width: 100%;
 }
