@@ -1,5 +1,4 @@
 .main{
-    margin-top: 20px;
     padding-bottom: 100px;
 }
 .bird-sect{
@@ -17,7 +16,9 @@
     font-size: 45px;
     color: white;
 }
-
+.mynav{
+    position: fixed;
+}
 .navbar{
     color: white;
 }
@@ -27,3 +28,16 @@
     color: white;
 }
 
+.main-page {
+    background-image: url(../images/background.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 230vh;
+    padding-top: 50px;
+}
+.paragraph{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    margin-top: 10px;
+}

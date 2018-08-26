@@ -5,8 +5,8 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/style_submit.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div class="navbar fixed-top navbar-light bg-light myNavBarNow">
@@ -14,30 +14,34 @@
                 <div class="progress" style="width:25%">
                     <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <div class = "float-left display-block" style="width:25%">points</div>
+                <div class = "float-left display-block" style="width:25%"> 400</div>
                 <div class = "float-right display-block" style="width:50%; text-align: right">
                     <a href="submit" >+</a>
                     <a href="index">Home</a>
                 </div>
             </div>
         </div>
-        <div><%=birdData.length%></div>
-
-          <% for(var i=0; i < birdData.length; i++) { %>
-            <div>
-              <h1><%=birdData[i].bird_name%></h1>
-              <p><%=birdData[i].description%></p>
-              <p><%=birdData[i].pic_url%></p>
-              <img src="<%=birdData[i].pic_url%>" alt="Italian Trulli">
+        <div class="container main main-page">
+            <h1>My Birds</h1>
+            <% for(var i=0; i < 2; i++){%>
+            <div class="col-6 float-left bird-data" style="text-align:center">
+                <a href="bird/<%=seen[i].bird_name.replace(' ', '')%>"><img src = "<%=seen[i].pic_url%>"  class="img-circle"></a>
+                <div><p class="paragraph"><%=seen[i].bird_name%></p></div>
             </div>
-          <% } %>
-
-          <div>
-            <%=JSON.stringify(birdData)%>
-          </div>
-        <a href="/add" class="fixed-bottom"  style="text-align: center" >
-            <div class="container footer">
+            <%}%>
+            <h1>All Birds</h1>
+            <% for(var i=0; i < birdData.length; i++) { %>
+            
+            
+            <div class="col-6 float-left bird-data" style="text-align:center">
+                <a href="bird/<%=birdData[i].bird_name.replace(' ', '')%>"><img src = "<%=birdData[i].pic_url%>"  class="img-circle"></a>
+                <div><p class="paragraph"><%=birdData[i].bird_name%></p></div>
             </div>
-        </a>
+            <% } %>
+        <a href="submit" class="fixed-bottom"  style="text-align: center" >
+            <div class="container footer my-footer">
+                +
+            </div>
+            </a>
     </body>
 </html>
