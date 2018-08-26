@@ -65,19 +65,18 @@ router.get('/', async function (req, res, next) {
                }
         }
     }
-        console.log("seen=============================================================================")
-    console.log(notSeenBirdObjects);
-        console.log("seen=============================================================================")
-    console.log(seenUserBirds);
-        console.log("seen=============================================================================")
-    console.log("seen=============================================================================")
-    
-    console.log(seenBirds);
-    console.log("seen=============================================================================")
-    console.log("notSeen=============================================================================")
-    console.log(notSeenBirds);
-    console.log("NotSeen=============================================================================")
-    
+    console.log(seenBirds)
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
+    console.log(notSeenBirds)
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
+    console.log("_________")
     res.render('index', {
       birdData: birdArray,
       sightings: sightings,
