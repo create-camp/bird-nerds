@@ -32,6 +32,8 @@
     background-image: url(../images/background.png);
     background-size: 100%;
     background-attachment: fixed;
+    height: 230vh;
+    padding-top: 50px;
 }
 .paragraph{
     padding: 5px;
