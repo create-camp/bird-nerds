@@ -101,3 +101,32 @@ a {
   padding-bottom: 29px;
   white-space: nowrap;
 }
+.birdImg {
+  width: 100%;
+}
+.birddatacontainer {
+  margin-top: 15px;
+  background-image: 
+  
+}
+.birdInfo {
+  font-family: Avenir, sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.description {
+ margin-top: 20px;
+}
+p {
+  margin-bottom: 0;
+}
+.imagerow:after {
+ content:"";
+ clear: both;
+ display: table;
+}
+.sightings img {
+  display: "inline";
+  vertical-align: middle;
+}

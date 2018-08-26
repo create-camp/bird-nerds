@@ -20,19 +20,37 @@
                 </div>
             </div>
         </div>
-       <div class="container">
-           <div class="card"><img src="<%=birdData[0].pic_url%>"></div>
-           <% for(var i=0; i < birdData.length; i++) { %>
-           <div class="card" style="width: 150px;height: 100px;">
-                <p>Name: <%=birdData[0].bird_name%></p>
-                <p>Te Reo: <%=birdData[0].maori_name%></p>
-                <p>Rarity: <%=birdData[0].rarity%></p>
-           </div>
-           <% } %>
-           <div class="description">
-               <p>description</p>
-               <p><%=birdData[0].description%></p>
-           </div>
+       <div class="container birddatacontainer">
+           <div class="row">
+                <div class="col">
+                    <div class="card"><img class="birdImg" src="<%=birdData[0].pic_url%>"></div>
+                </div>
+                <div class="col">
+                    <div class="card birdInfo" style="width: 150px;height: 100px;">
+                        <p>Name: <%=birdData[0].bird_name%></p>
+                        <p>Te Reo: <%=birdData[0].maori_name%></p>
+                        <p>Rarity: <%=birdData[0].rarity%></p>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                        <div class="description">
+                                <h3>description</h3>
+                                <p><%=birdData[0].description%></p>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="sightings">
+                        <p>My Sightings</p>
+                            <div><img src="http://nzbirdsonline.org.nz/sites/all/files/1200472Kea1.jpg" alt="Tui", width=60px height=60px></div></div>
+                            <div><img src="https://www.doc.govt.nz/global/images/nature/native-animals/birds/kea/kea-milford-sbernert-1200-4.jpg" alt="Tui", width=60px height=60px></div>
+                            <div><img src="https://www.milford-sound.co.nz/wp-content/uploads/2017/07/milford-sound-kea-flight.jpg" alt="Tui", width=60px height=60px></div>
+                    </div>
+                </div>
+            </div>
 
        </div>
     </body>
