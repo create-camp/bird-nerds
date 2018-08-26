@@ -5,8 +5,8 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/style_submit.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div class="navbar fixed-top navbar-light bg-light myNavBarNow">
@@ -21,20 +21,16 @@
                 </div>
             </div>
         </div>
-        <div><%=birdData.length%></div>
-
-          <% for(var i=0; i < birdData.length; i++) { %>
-            <div>
-              <h1><%=birdData[i].bird_name%></h1>
-              <p><%=birdData[i].description%></p>
-              <p><%=birdData[i].pic_url%></p>
-              <img src="<%=birdData[i].pic_url%>" alt="Italian Trulli">
+        <div class="container main main-page">
+            <h1>All Birds</h1>
+            <% for(var i=0; i < birdData.length; i++) { %>
+            
+            
+            <div class="col-6 float-left bird-data" style="text-align:center">
+                <a href="bird/<%=birdData[i].bird_name.replace(' ', '')%>"><img src = "<%=birdData[i].pic_url%>"  class="img-circle"></a>
+                <div><p class="paragraph"><%=birdData[i].bird_name%></p></div>
             </div>
           <% } %>
-
-          <div>
-            <%=JSON.stringify(birdData)%>
-          </div>
         <a href="/add" class="fixed-bottom"  style="text-align: center" >
             <div class="container footer">
             </div>
