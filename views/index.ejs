@@ -21,20 +21,22 @@
                 </div>
             </div>
         </div>
+        <div><%=birdData.length%></div>
 
-        <div class="container main">
-            <h1>All Birds</h1>
-            <% for(var i=0; i < birdData.length; i++) { %>
-            <div class="col-6 float-left">
-                <a href="bird/<%=birdData[i].bird_name.replace(' ', '')%>"><img src = "<%=birdData[i].pic_url%>"  class="img-circle"></a>
-                <p><%=birdData[i].bird_name%></p>
+          <% for(var i=0; i < birdData.length; i++) { %>
+            <div>
+              <h1><%=birdData[i].bird_name%></h1>
+              <p><%=birdData[i].description%></p>
+              <p><%=birdData[i].pic_url%></p>
+              <img src="<%=birdData[i].pic_url%>" alt="Italian Trulli">
             </div>
-            <% } %>
-            <div style="clear:both"></div>
-        </div>
-        <a href="submit" class="fixed-bottom"  style="text-align: center" >
-            <div class="container footer footer-container my-footer">
-                +
+          <% } %>
+
+          <div>
+            <%=JSON.stringify(birdData)%>
+          </div>
+        <a href="/add" class="fixed-bottom"  style="text-align: center" >
+            <div class="container footer">
             </div>
         </a>
     </body>
