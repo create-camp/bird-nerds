@@ -22,6 +22,15 @@
             </div>
         </div>
         <div class="container main main-page">
+            <h1>My Birds</h1>
+            <script>
+            var birds = []
+            </script>
+            <script> 
+                var seen = <%birdData.filter(bird => users[1].birds.indexOf(bird.bird_name) > -1 )%>;
+                console.log(seen) ;
+            </script>
+            <script>console.log(birds);</script>
             <h1>All Birds</h1>
             <% for(var i=0; i < birdData.length; i++) { %>
             
@@ -30,7 +39,7 @@
                 <a href="bird/<%=birdData[i].bird_name.replace(' ', '')%>"><img src = "<%=birdData[i].pic_url%>"  class="img-circle"></a>
                 <div><p class="paragraph"><%=birdData[i].bird_name%></p></div>
             </div>
-          <% } %>
+            <% } %>
         <a href="/add" class="fixed-bottom"  style="text-align: center" >
             <div class="container footer">
             </div>
