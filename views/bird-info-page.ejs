@@ -20,19 +20,35 @@
                 </div>
             </div>
         </div>
-       <div class="container">
-           <div class="card"><img src="<%=birdData[0].pic_url%>"></div>
-           <% for(var i=0; i < birdData.length; i++) { %>
-           <div class="card" style="width: 150px;height: 100px;">
-                <p>Name: <%=birdData[0].bird_name%></p>
-                <p>Te Reo: <%=birdData[0].maori_name%></p>
-                <p>Rarity: <%=birdData[0].rarity%></p>
-           </div>
-           <% } %>
-           <div class="description">
-               <p>description</p>
-               <p><%=birdData[0].description%></p>
-           </div>
+       <div class="container birddatacontainer">
+           <div class="row">
+                <div class="col">
+                    <div class="card"><img class="birdImg" src="<%=birdData[0].pic_url%>"></div>
+                </div>
+                <div class="col">
+                    <div class="card birdInfo" style="width: 150px;height: 100px;">
+                        <p>Name: <%=birdData[0].bird_name%></p>
+                        <p>Te Reo: <%=birdData[0].maori_name%></p>
+                        <p>Rarity: <%=birdData[0].rarity%></p>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                        <div class="description">
+                                <p>description</p>
+                                <p><%=birdData[0].description%></p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="sightings">
+                            <% for(var i=0; i < 0 i++) { %>
+                                <div></div>
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+           
 
        </div>
     </body>

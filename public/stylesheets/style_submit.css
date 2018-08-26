@@ -100,3 +100,13 @@ a {
   padding-bottom: 29px;
   white-space: nowrap;
 }
+.birdImg {
+  width: 100%;
+}
+.birddatacontainer {
+  margin-top: 15px;
+  
+}
+.birdInfo {
+  font-family: Avenir, sans-serif;
+}
