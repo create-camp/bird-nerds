@@ -15,8 +15,7 @@ module.exports = function(req, res, next) {
                 return object;
             }
         });
-        console.log(JSON.parse(sightings));
-        
+
         res.render('bird-info-page', {
             birdData: [bird]
         });
