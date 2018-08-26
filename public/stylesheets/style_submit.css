@@ -1,12 +1,9 @@
 /*Created this CSS cause I didnt want to mess with anyone's stuff yet*/
 
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+img{
+  max-width:120%;
+  max-height:100%;
 }
-a {
-  color: #00B7FF;
-} */
 
 .main_container{
   width: 320px;
