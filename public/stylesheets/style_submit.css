@@ -29,10 +29,10 @@
 }
 
 .geomap{
-  padding-left: 15px;
   padding-top: 20px;
   padding-right: 27px;
   padding-bottom: 19px;
+  float:right
 }
 
 .Which-bird-did-you-f {
