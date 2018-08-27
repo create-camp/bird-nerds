@@ -78,9 +78,11 @@
   line-height: normal;
   letter-spacing: normal;
   color: #7e7e7e;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-top: 32px;
-  padding-bottom: 29px;
   white-space: nowrap;
+}
+
+.add_button{
+  margin-left: 25px;
+  margin-top: -18px;
+  position: absolute;
 }
