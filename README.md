@@ -6,7 +6,7 @@ Created over a weekend at SoT Wellington Create Camp 2018 by a fun team of 4 dev
 
 Bird Nerds ended up winning the Best Collaboration Award.
 
-Agile Methods/Tools used: Peer Programming, Crazy Eights, Hourly Stand-ups, Kanban Board.
+**Agile Methods/Tools used:** Peer Programming, Crazy Eights, Hourly Stand-ups, Kanban Board.
 
 
 ## Credits
